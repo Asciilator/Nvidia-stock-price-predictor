@@ -1,19 +1,30 @@
-Project description:
-A model, which is programmed in Python, will be built, that predicts potential outcomes for real-world phenomena based on real-world data. 
-It will do so by retrieving statistical models, comparing their performance on unseen inputs and visualizing predictions, which are overlaid with the data to evaluate its accuracy. 
-The first application of the model will be to predict the Iphone price for September 2024 based on global GDP growth and US GDP growth.
-The second application of the model will be to predict the rainfall for the next two days during autumn and winter in the Netherlands, based on solar radiation and temperature data from the past five days.
+Name: Yusuf Ascibasi
+Student number: 5748011
 
-Algorithm/library/methods:
-Linear Regression or Time Series Analysis (for example ARIMA or SARIMA) will be used to predict the Iphone price and the Decision Tree or Long Short-Term Memory networks to predict rainfall. 
-As for the libraries, scikit-learn will be used for regression models and random forests. 
-The Statsmodels library will be used for the time series analysis.
-Tensorflow or Keras library will be used for deep learning methods.
-Matplotlib and/or seaborn will be used to visualize the (predicted) data.
+Project description:
+    The model will retrieve relevant historical data and use statistical methods to predict stock prices for unseen future inputs, and these predictions will be compared with actual outcomes to evaluate accuracy. The model for this project will predict the stock prices of the IT company Nvidia based on the demand of Graphical Processing Units (GPU's) in the previous years, market performance (i.e. S&P 500 index) and based on Nividia's past stock prices.
+
+Algorithms: 
+    Moving average: used to calculate the average of stock prices over a short window (e.g., the last 5 days).
+    Linear regression: used for past stock prices, trading volume, and demand for GPUs.
+
+Libraries: 
+    Pandas: For data manipulation and loading historical data.
+    NumPy: For mathematical operations and array manipulation.
+    Matplotlib: For visualizing the predicted and actual stock prices.
+    Scikit-learn: For implementing linear regression.
+
+Methods: 
+    Data Preprocessing: Normalize the stock prices and GPU demand data to ensure proper scaling for the model.
+    Model Evaluation: Use Mean Squared Error (MSE) or Mean Absolute Error (MAE) to evaluate the prediction performance.
 
 Required data:
-In order to predict the IPhone price, the historical Iphone prices, global GDP growth data and US GDP growth data will be collected.
-For the rainfall prediction histrorical weather data from the Netherlands regarding solar radiation and temperature measurements from the past 5 days is required.
+    Historical Stock Prices for Nvidia: Collected over the past several months or years, including daily closing prices and trading volumes.
+    GPU Demand Data: Data reflecting the global demand for Nvidia GPUs over the past few years.
+    Market Performance Indicators: General market indicators, such as the S&P 500 index, to account for market-wide effects on Nvidia stock prices.
 
 Expected outcome:
-Visual plots will be obtained from the predicted data and the actual data for visual comparison. The predicted Iphone price will probably predict the actual price poorly, since global GDP the GDP of the US alone do not influence the Iphone price to such great extent. The model that predicts the rainfall in the Netherlands will most probably reach an accuracy under 50%, since temperature measurements and solar radiation alone are not on their own determening factors for rainfall. Moreover, for a more accurate rainfall prediction, data from way more than 5 days would be needed.       
+    Predicted Stock Prices: The model will generate predicted stock prices for Nvidia over a future period (e.g., next 5 days).
+    Comparison with Actual Data: The predicted stock prices will be compared to the actual stock prices to measure accuracy.
+    Visualizations: A plot showing the predicted stock prices overlaid on the actual stock prices, allowing for visual comparison of the model’s performance.
+    Model Performance Metrics: The accuracy of the model will be reported using metrics such as Mean Squared Error (MSE) or Mean Absolute Error (MAE).   
