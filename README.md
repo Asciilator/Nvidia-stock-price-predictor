@@ -5,7 +5,7 @@ Project description:
     The model will retrieve relevant historical data and use statistical methods to predict stock prices for unseen future inputs, and these predictions will be compared with actual outcomes to evaluate accuracy. The model for this project will predict the stock prices of the IT company Nvidia based on the demand of Graphical Processing Units (GPU's) in the previous years, market performance (i.e. S&P 500 index) and based on Nividia's past stock prices.
 
 Algorithms: 
-    Moving average: used to calculate the average of stock prices over a short window (e.g., the last 5 days).
+    Moving average: used to calculate the average of stock prices over a short window (e.g., the last 5 days). 
     Linear regression: used for past stock prices, trading volume, and demand for GPUs.
 
 Libraries: 
