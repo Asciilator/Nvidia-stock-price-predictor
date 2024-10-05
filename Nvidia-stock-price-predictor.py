@@ -6,18 +6,34 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 import yfinance as yf
 
-# Step 1: Load Nvidia Stock Data
+# Load Nvidia Stock Data
 def load_data(ticker="NVDA", start_date="2022-01-01", end_date="2023-01-01"):
     stock_data = yf.download(ticker, start=start_date, end=end_date)
     stock_data['Date'] = stock_data.index
     return stock_data
 
-# Step 2: Moving Average Model
+
+# Or alternatively, after running the data-retrieval.py file, you can load its resulting CSV file to load the Nvidia Stock Data 
+
+# def load_finance_data_from_csv(filepath):
+#     stock_data = pd.read_csv(filepath, index_col='Date', parse_dates=True)
+#     return stock_data
+
+# # Load your CSV file according to your filepath and display the data
+#     csv_file_path = r'C:\Users\yusuf\OneDrive\LST\Derde jaar\Y3Q1\Signals and systems with python\Python project\Nvidia-stock-price-prediction\nvidia_stock_data.csv'  # Replace with the path to your file
+#     stock_data = load_finance_data_from_csv(csv_file_path)
+
+
+# Display the first few rows of the stock data to show that you actually obtained the data
+stock_data = load_data()
+print(stock_data.head())
+
+# Moving Average Model
 def moving_average_prediction(data, window=5):
     data['Moving_Avg'] = data['Close'].rolling(window=window).mean()
     return data
 
-# Step 3: Linear Regression Model
+# Linear Regression Model
 def linear_regression_prediction(data):
     # Prepare the data
     data['Days'] = np.arange(len(data))  # Use the number of days as a feature
@@ -44,7 +60,7 @@ def linear_regression_prediction(data):
 
     return data
 
-# Step 4: Visualize the Predictions
+# Visualize the Predictions
 def visualize_predictions(data):
     plt.figure(figsize=(14, 7))
     
@@ -64,7 +80,7 @@ def visualize_predictions(data):
     plt.grid(True)
     plt.show()
 
-# Step 5: Main function to run everything
+# Main function to run everything
 def main():
     # Load data
     stock_data = load_data()

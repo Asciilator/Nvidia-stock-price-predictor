@@ -1,1 +1,6 @@
 This is some text I have added and commited locally. After pushing this empty text file to github, this piece of text must be visible in my Github repository.
+
+Moet je voor elke functie een file maken en die vervolgens testen
+
+Waarvoor dient een toml file? 
+
