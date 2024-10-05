@@ -1,1 +1,29 @@
-name = "Nvidia-stock-price-predictor.py"
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Nvidia-stock-price-prediction"
+version = "0.1.0"
+description = "A Python project for predicting Nvidia stock prices using machine learning."
+authors = [
+    { name = "Yusuf Ascibasi", email = "yusuf2004m@hotmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.dependencies]
+pandas = "^2.0"
+numpy = "^1.24"
+scikit-learn = "^1.2"
+matplotlib = "^3.7"
+yfinance = "^0.2.30"
+# Add any other libraries you may be using here
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+
