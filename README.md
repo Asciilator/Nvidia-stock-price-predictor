@@ -28,3 +28,13 @@ Expected outcome:
     Comparison with Actual Data: The predicted stock prices will be compared to the actual stock prices to measure accuracy.
     Visualizations: A plot showing the predicted stock prices overlaid on the actual stock prices, allowing for visual comparison of the model’s performance.
     Model Performance Metrics: The accuracy of the model will be reported using metrics such as Mean Squared Error (MSE) or Mean Absolute Error (MAE).   
+
+The build section and metadata is given in the pyproject.toml file. 
+You can run the data-retrieval.py file to obtain the Nvidia stock data used for this project. After running, a nvidia_stock_data.csv file will be loaded to the repository. Besides verifying the raw data, this loaded file can also be used for the stock price predictions (as an alternative). 
+
+Intructions for testing the functions:
+- Make sure the module pytest is pip installed already in the environment in which you are going to test the functions. You can check by typing in the terminal "pytest --version" and running the command. If not installed, run "pip install pytest" in the terminal.
+- Make sure the test-nvidia-stock-predictor.py file is in this directory and the code doesn't contain errors.
+- Make sure to be in the directory of this repository in your terminal. If not, change the directory to the file path to this repository.
+- To test the functions, run "pytest test-nvidia-stock-predictor.py" in the terminal.
+- It should output "3 passed in ...s", since the assertions correspond to the expected function outputs. 
