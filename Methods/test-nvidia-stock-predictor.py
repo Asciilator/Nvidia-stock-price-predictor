@@ -1,7 +1,7 @@
 import pytest
 import pandas as pd
 import numpy as np
-from nvidia_stock_price_predictor import (
+from Methods.nvidia_stock_price_predictor import (
     load_data,
     moving_average_prediction,
     linear_regression_prediction

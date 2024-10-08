@@ -125,6 +125,11 @@ def visualize_predictions(data):
     plt.ylabel("Price (USD)")
     plt.legend()
     plt.grid(True)
+
+    # Save the plot to your working directory as a PNG file
+    plt.savefig("nvidia_stock_price_prediction.png")
+
+    # Display the plot
     plt.show()
 
 # Main function to run everything
