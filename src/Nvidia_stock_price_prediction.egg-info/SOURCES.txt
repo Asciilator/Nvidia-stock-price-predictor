@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/Methods/data_retrieval.py
+src/Methods/nvidia_stock_price_predictor.py
+src/Methods/test_nvidia_stock_predictor.py
+src/Nvidia_stock_price_prediction.egg-info/PKG-INFO
+src/Nvidia_stock_price_prediction.egg-info/SOURCES.txt
+src/Nvidia_stock_price_prediction.egg-info/dependency_links.txt
+src/Nvidia_stock_price_prediction.egg-info/requires.txt
+src/Nvidia_stock_price_prediction.egg-info/top_level.txt
