@@ -35,6 +35,6 @@ You can run the data-retrieval.py file to obtain the Nvidia stock data used for 
 Intructions for testing the functions:
 - Make sure the module pytest is pip installed already in the environment in which you are going to test the functions. You can check by typing in the terminal "pytest --version" and running the command. If not installed, run "pip install pytest" in the terminal.
 - Make sure the test-nvidia-stock-predictor.py file is in this directory and the code doesn't contain errors.
-- Make sure to be in the directory of this repository in your terminal. If not, change the directory to the file path to this repository.
+- Make sure to be in the directory of this repository in your terminal. If not, change the directory to the file path to this repository. Since the test-nvidia-stock-predictor.py file is in the Method folder, don't forget to change to that directory before running the test by running the command "cd Method". 
 - To test the functions, run "pytest test-nvidia-stock-predictor.py" in the terminal.
 - It should output "3 passed in ...s", since the assertions correspond to the expected function outputs. 
